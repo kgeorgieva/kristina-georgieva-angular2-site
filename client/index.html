@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kristina Georgieva</title>
+  <base href="<%= APP_BASE %>">
+  
+  <!-- inject:css -->
+  <!-- endinject -->
+
+</head>
+<body data-app-version="<%= APP_VERSION %>">
+
+  <app>
+  </app>
+
+  <!-- inject:js -->
+  <!-- endinject -->
+
+  <script>
+    System.import('bootstrap')
+      .catch(function (e) {
+        console.error(e);
+      });
+  </script>
+
+</body>
+</html>
