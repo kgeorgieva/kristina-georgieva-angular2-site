@@ -28,3 +28,51 @@ h2 {
 .ng-invalid, .ng-invalid:focus {
   border-left: 3px solid #a94442; /* red */
 }
+
+.kg-app-title {
+    font-size: 100px;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+    display: table;
+}
+
+.kg-navigation {
+    border-color: #e7e7e7;
+    margin: auto;
+    background-color: white;
+    opacity: 0.4;
+    width: 50%;
+}
+
+.kg-navigation-container {
+    width: 100%;
+    bottom: 30%;
+    position: fixed;
+}
+
+.center {
+    margin: auto;
+}
+
+a {
+    font-weight: bold;
+    color: #666666;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #666666;
+    cursor: pointer;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
