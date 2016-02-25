@@ -5,7 +5,6 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 
 import {HttpUtil} from './core/http.util';
 import {AppComponent} from './components/app/app.component';
-import {ContactService} from './components/contact/contact.service';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
@@ -13,6 +12,5 @@ import 'rxjs/add/operator/do';
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS,
   HTTP_PROVIDERS,
-  HttpUtil,
-  ContactService
+  HttpUtil
 ]);

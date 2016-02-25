@@ -5,7 +5,6 @@ import * as openResource from 'open';
 import {resolve} from 'path';
 
 import {APP_BASE, LIVE_RELOAD_PORT, PATH, PORT} from '../tools/config';
-import * as contactRouter from './contact/contact.router';
 
 const INDEX_DEST_PATH = resolve(PATH.cwd, PATH.dest.app.base, 'index.html');
 
@@ -26,8 +25,6 @@ server.get('/api/**', (req, res, next) => {
   const delay = Math.floor((Math.random() * 300) + 1);
   setTimeout(() => next(), delay);
 });
-
-server.use('/api/contact', contactRouter);
 
 server.get(APP_BASE + '*', (req, res) =>
   res.sendFile(INDEX_DEST_PATH)

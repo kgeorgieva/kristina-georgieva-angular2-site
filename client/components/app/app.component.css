@@ -49,6 +49,20 @@ h2 {
     width: 100%;
     bottom: 30%;
     position: fixed;
+
+    transition: bottom 0.15s linear;
+}
+
+.lowerMenu {
+    bottom: 10%;
+
+    transition: bottom 0.15s linear;
+}
+
+.kg-main-container {
+    width: 100%;
+    bottom: 25%;
+    position: fixed;
 }
 
 .center {
@@ -76,3 +90,22 @@ a:hover {
 .navbar .navbar-collapse {
   text-align: center;
 }
+
+.kg-overlay {
+  opacity: 0;
+  width: 45%;
+  margin: auto;
+  padding: 10px;
+  display: block;
+  background-color: white;
+  height: 0;
+
+  transition: height 0.15s ease-out;
+}
+
+.kg-overlay.show {
+  height: 500px;
+  transition: height 0.15s ease-in;
+  opacity: 0.4;
+}
+

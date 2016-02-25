@@ -1,41 +1,44 @@
-<div class="kg-navigation-container">
+<div [ngClass]="{'lowerMenu' : showOverlay, 'kg-navigation-container' : true}">
   <nav class="navbar kg-navigation">
     <div class="container-fluid">
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="main_navbar">
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/']">Home</a></li>
+          <li><a>Home</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/About']">About</a></li>
+          <li><a (click)="openOverlay('About')">About</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/Cv']">CV</a></li>
+          <li><a>CV</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/Technologies']">Technologies</a></li>
+          <li><a>Technologies</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/Education']">Education</a></li>
+          <li><a>Education</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/Publications']">Publications</a></li>
+          <li><a>Publications</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/Activities']">Activities</a></li>
+          <li><a>Activities</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/Contact']">Contact</a></li>
+          <li><a>Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
 
-<section id="main_container" class="container-fluid">
+<section class="kg-main-container container-fluid">
 
-  <router-outlet></router-outlet>
-
+  <home>
+    <div [ngClass]="{'show' : showOverlay, 'kg-overlay' : true}">
+      <!--overlay directive with ng-ifs for different content and getting content name-->
+    </div>
+  </home>
  
 
 </section>
