@@ -1,30 +1,32 @@
 <div [ngClass]="{'lowerMenu' : showOverlay, 'kg-navigation-container' : true}">
-  <nav class="navbar kg-navigation">
+  <nav class="navbar navbar-default kg-navigation" role="navigation">
     <div class="container-fluid">
+      <div class = "navbar-header">
+        <button type = "button" class = "navbar-toggle" 
+           data-toggle = "collapse" data-target = "#kg-main-navbar">
+           <span class = "sr-only">Home</span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+        </button>
+     </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="main_navbar">
+      <div class="collapse navbar-collapse" id="kg-main-navbar">
         <ul class="nav navbar-nav">
           <li><a (click)="closeOverlay()">Home</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
+        
           <li><a (click)="openOverlay('about')">About</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
+        
           <li><a (click)="openOverlay('cv')">CV</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
+        
           <li><a (click)="openOverlay('technologies')">Technologies</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
+        
           <li><a (click)="openOverlay('education')">Education</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
+        
           <li><a (click)="openOverlay('publications')">Publications</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
+        
           <li><a (click)="openOverlay('activities')">Activities</a></li>
-        </ul>
-        <ul class="nav navbar-nav">
+        
           <li><a (click)="openOverlay('contact')">Contact</a></li>
         </ul>
       </div>
