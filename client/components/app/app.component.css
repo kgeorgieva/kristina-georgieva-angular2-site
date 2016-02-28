@@ -30,15 +30,15 @@ body {
     margin: auto;
     background-color: #F5F5F5;
     opacity: 0.65;
-    width: 50%;
+    width: 1000px;
     box-shadow: 0 0 30px #1f1f14;
-    z-index: 5;
 }
 
 .kg-navigation-container {
     width: 100%;
     bottom: 30%;
     position: fixed;
+    z-index: 5;
 
     transition: bottom 0.15s linear;
 }
@@ -83,7 +83,7 @@ a:hover {
 
 .kg-overlay {
   opacity: 0;
-  width: 45%;
+  width: 900px;
   margin: auto;
   padding: 40px;
   display: block;
@@ -100,4 +100,16 @@ a:hover {
   transition: height 0.15s ease-in;
   opacity: 0.65;
 }
+
+@media screen and (max-width: 940px) {
+  .kg-overlay {
+    width: 95%;
+  }
+
+  .kg-navigation {
+    width: 100%
+  }
+}
+
+
 
