@@ -32,15 +32,17 @@
   </nav>
 </div>
 
-<section class="container-fluid">
+<section class="container-fluid kg-container-fluid">
   <home>
    
   </home>
 
-  <div class="kg-main-container"></div>
- 
-  <div [ngClass]="{'show' : showOverlay, 'kg-overlay' : true}">
+  <div class="kg-main-container">
+    <div [ngClass]="{'show' : showOverlay, 'kg-overlay' : true}">
     <overlay [currentPage]='page'></overlay>
   </div>
+  </div>
+ 
+  
 
 </section>
