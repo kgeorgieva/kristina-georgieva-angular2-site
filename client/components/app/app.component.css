@@ -99,6 +99,7 @@ a:hover {
   display: block;
   background-color: white;
   height: 0;
+  color: black;
 
   transition: height 0.15s ease-out;
 }

@@ -1,3 +1,9 @@
-<div class="kg-overlay">
-	{{ctrlOverlay.overlayContent}}
+<div class="kg-overlay-container">
+	<about *ngIf="currentPage === 'about'"></about>
+	<cv *ngIf="currentPage === 'cv'"></cv>
+	<technologies *ngIf="currentPage === 'technologies'"></technologies>
+	<education *ngIf="currentPage === 'education'"></education>
+	<publications *ngIf="currentPage === 'publications'"></publications>
+	<activities *ngIf="currentPage === 'activities'"></activities>
+	<contact *ngIf="currentPage === 'contact'"></contact>
 </div>

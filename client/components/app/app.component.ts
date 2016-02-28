@@ -2,20 +2,25 @@ import {Component, ViewEncapsulation} from 'angular2/core';
 
 import {HttpUtil} from '../../core/http.util';
 import {Notification} from '../../core/dto';
+import {HomeComponent} from '../../components/home/home.component';
+import {OverlayComponent} from '../../components/overlay/overlay.component';
 
 @Component({
   selector: 'app',
-  templateUrl: './components/app/app.component.html',
   styleUrls: ['./components/app/app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  templateUrl: './components/app/app.component.html',
+  directives: [HomeComponent, OverlayComponent]
 })
 export class AppComponent {
 	constructor() {
 		this.showOverlay = false;
+		this.page = 'about';
 	}
 	
 	openOverlay(contentName) {
 		this.showOverlay = true;
+		this.page = contentName;
     };
 }
 

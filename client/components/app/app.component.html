@@ -7,38 +7,40 @@
           <li><a>Home</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a (click)="openOverlay('About')">About</a></li>
+          <li><a (click)="openOverlay('about')">About</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a>CV</a></li>
+          <li><a (click)="openOverlay('cv')">CV</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a>Technologies</a></li>
+          <li><a (click)="openOverlay('technologies')">Technologies</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a>Education</a></li>
+          <li><a (click)="openOverlay('education')">Education</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a>Publications</a></li>
+          <li><a (click)="openOverlay('publications')">Publications</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a>Activities</a></li>
+          <li><a (click)="openOverlay('activities')">Activities</a></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a>Contact</a></li>
+          <li><a (click)="openOverlay('contact')">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
 
-<section class="kg-main-container container-fluid">
-
+<section class="container-fluid">
   <home>
-    <div [ngClass]="{'show' : showOverlay, 'kg-overlay' : true}">
-      <!--overlay directive with ng-ifs for different content and getting content name-->
-    </div>
+   
   </home>
+
+  <div class="kg-main-container"></div>
  
+  <div [ngClass]="{'show' : showOverlay, 'kg-overlay' : true}">
+    <overlay [currentPage]='page'></overlay>
+  </div>
 
 </section>

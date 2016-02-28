@@ -5,6 +5,9 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 
 import {HttpUtil} from './core/http.util';
 import {AppComponent} from './components/app/app.component';
+import {HomeComponent} from './components/home/home.component';
+import {OverlayComponent} from './components/overlay/overlay.component';
+import {AboutComponent} from './components/about/about.component';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
