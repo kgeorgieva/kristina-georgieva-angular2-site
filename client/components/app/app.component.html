@@ -1,10 +1,10 @@
-<div [ngClass]="{'lowerMenu' : showOverlay, 'kg-navigation-container' : true}">
+<div [ngClass]="{'lowerMenu' : showOverlay, 'kg-navigation-container' : true, 'row' : true}">
   <nav class="navbar kg-navigation">
     <div class="container-fluid">
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="main_navbar">
         <ul class="nav navbar-nav">
-          <li><a>Home</a></li>
+          <li><a (click)="closeOverlay()">Home</a></li>
         </ul>
         <ul class="nav navbar-nav">
           <li><a (click)="openOverlay('about')">About</a></li>
@@ -37,7 +37,7 @@
    
   </home>
 
-  <div class="kg-main-container"></div>
+  <div class="kg-main-container row"></div>
  
   <div [ngClass]="{'show' : showOverlay, 'kg-overlay' : true}">
     <overlay [currentPage]='page'></overlay>

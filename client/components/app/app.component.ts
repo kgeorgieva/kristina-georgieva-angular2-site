@@ -17,10 +17,15 @@ export class AppComponent {
 		this.showOverlay = false;
 		this.page = 'about';
 	}
+
+	closeOverlay() {
+		this.showOverlay = false;
+    };
 	
 	openOverlay(contentName) {
 		this.showOverlay = true;
 		this.page = contentName;
     };
+
 }
 
