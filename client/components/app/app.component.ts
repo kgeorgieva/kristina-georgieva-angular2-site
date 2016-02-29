@@ -25,6 +25,7 @@ export class AppComponent {
 	openOverlay(contentName) {
 		this.showOverlay = true;
 		this.page = contentName;
+		$('.navbar-collapse').collapse('hide');
     };
 
 }
