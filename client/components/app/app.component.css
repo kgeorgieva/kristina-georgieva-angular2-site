@@ -149,3 +149,17 @@ a:hover {
     float:  right;
     padding-right: 5px;
 }
+
+.bg-success {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.bg-warning {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.kg-section {
+  padding-bottom: 30px;
+}
