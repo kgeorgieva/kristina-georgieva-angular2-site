@@ -81,7 +81,7 @@ a:hover {
   opacity: 0;
   width: 900px;
   margin: auto;
-  padding: 40px;
+  padding: 30px;
   display: block;
   background-color: #F5F5F5;
   height: 0;
@@ -137,3 +137,15 @@ a:hover {
   height:   100%
 }
 
+.glyphicon {
+    padding: 10px;
+}
+
+#columnchart_values {
+  padding-top: 35px
+}
+
+.kg-link__linkedin {
+    float:  right;
+    padding-right: 5px;
+}
