@@ -7,11 +7,12 @@
   <base href="<%= APP_BASE %>">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet"/>
 
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript">        
     google.load('visualization', '1.0', {
-      'packages': ['corechart']
+      'packages': ['corechart', 'timeline', 'geochart']
     });
   </script>
 
@@ -35,6 +36,7 @@
       .catch(function (e) {
         console.error(e);
       });
+      
   </script>
 
 </body>
