@@ -278,3 +278,12 @@ activities h3 {
       padding: 5px;
     }
 }
+
+.nav-pills>li>a:hover {
+    background-color: #330000;
+    cursor: default;
+}
+
+.contact-section a:hover {
+  color: #330000;
+}
