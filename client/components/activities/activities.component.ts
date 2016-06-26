@@ -28,6 +28,7 @@ export class ActivitiesComponent  implements AfterViewInit {
           ['Turkey', 200],
           ['Mozambique', 100],
           ['Argentina', 100],
+          ['Namibia', 100],
           ['', 0]
         ]);
 

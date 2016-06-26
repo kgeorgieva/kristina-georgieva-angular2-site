@@ -116,6 +116,25 @@ a:hover {
     }
 }
 
+@media screen and (max-height: 800px) {
+  .kg-overlay.show {
+    height: 90%;
+    width: 95%;
+  }
+
+  .kg-navigation {
+    width: 100%
+  }
+
+  .lowerMenu {
+    bottom: 0;
+
+    transition: bottom 0.15s linear;
+    }
+
+}
+
+
 @media screen and (max-width: 768px) {
   .kg-overlay.show {
     height: 95%;
@@ -286,4 +305,8 @@ activities h3 {
 
 .contact-section a:hover {
   color: #330000;
+}
+
+.empty-separator {
+  height: 15px;
 }

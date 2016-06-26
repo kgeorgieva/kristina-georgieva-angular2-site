@@ -34,13 +34,13 @@ export const PATH = {
       {src: 'node_modules/es6-shim/es6-shim.min.js', dest: LIB_DEST, inject: true},
       {src: 'node_modules/systemjs/dist/system-polyfills.js', dest: LIB_DEST},
       {src: 'node_modules/systemjs/dist/system.src.js', dest: LIB_DEST, inject: true},
-      { src: 'node_modules/angular2/bundles/angular2-polyfills.js', dest: LIB_DEST, inject: true },
+      { src: 'node_modules/angular2/bundles/angular2-polyfills.min.js', dest: LIB_DEST, inject: true },
 
       {src: `${CLIENT_SRC_BASE}/system.config.js`, dest: LIB_DEST, inject: true},
 
-      {src: 'node_modules/angular2/bundles/angular2.js', dest: LIB_DEST, inject: true},
-      {src: 'node_modules/angular2/bundles/router.js', dest: LIB_DEST, inject: true},
-      {src: 'node_modules/angular2/bundles/http.js', dest: LIB_DEST, inject: true},
+      {src: 'node_modules/angular2/bundles/angular2.min.js', dest: LIB_DEST, inject: true},
+      {src: 'node_modules/angular2/bundles/router.min.js', dest: LIB_DEST, inject: true},
+      {src: 'node_modules/angular2/bundles/http.min.js', dest: LIB_DEST, inject: true},
 
       {src: 'node_modules/bootstrap/dist/css/bootstrap.min.css', dest: LIB_DEST, inject: true}
     ],
